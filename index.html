@@ -8,44 +8,20 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
+    <style media="screen">
+      body {
+        color #333;
+        font-size: 14px;
+        font-family: "Courier New";
+      }
+    </style>
+
     <title>Meatpause</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/gggritso/meatpause-v2">View on GitHub</a>
-
-          <h1 id="project_title">Meatpause</h1>
-          <h2 id="project_tagline">Click to pause and resume Meatspace V2 videos</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/gggritso/meatpause-v2/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/gggritso/meatpause-v2/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p>Just drag the link to the toolbar, as per usual.</p>
-
-<p>MeatPause</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Meatpause maintained by <a href="https://github.com/gggritso">gggritso</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
+    <a href="javascript:(function()%7B(%20function()%20%7Bdocument.addEventListener(%20'click'%2C%20function(%20event%20)%20%7Bvar%20target%20%3D%20event.target%20%7C%7C%20null%3Bif%20(%20!target%20%7C%7C%20target.nodeName%20!%3D%3D%20'VIDEO'%20)%20return%3Bif%20(%20target.paused%20)%20%7Btarget.play()%3B%7D%20else%20%7Btarget.pause()%3B%7D%7D)%3B%7D)()%7D)()">MeatPause Bookmarklet</a>
 
   </body>
 </html>
